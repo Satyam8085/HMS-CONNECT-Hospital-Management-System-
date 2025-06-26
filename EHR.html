@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electronic Health Records | HMS CONNECT</title>
+  <link rel="stylesheet" href="ehr.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="left">
+      <img src="v987-18a.jpg" alt="Logo">
+      <h4>HMS CONNECT</h4>
+    </div>
+    <div class="right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="ehr-section">
+    <h1 class="section-title">📋 Electronic Health Records</h1>
+    <p class="section-subtitle">Enter, store, and download patient data securely and efficiently.</p>
+
+    <form class="ehr-form">
+      <h2>👤 Patient Information</h2>
+      <label for="patient-name">Full Name</label>
+      <input type="text" id="patient-name" name="patient-name" placeholder="Enter full name" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="contact">Contact Number</label>
+      <input type="text" id="contact" name="contact" placeholder="Enter contact number" required>
+
+      <h2>📜 Medical History</h2>
+      <textarea name="history" id="history" rows="4" placeholder="Past illnesses, allergies, surgeries..."></textarea>
+
+      <h2>💊 Current Medications</h2>
+      <textarea name="medications" id="medications" rows="4" placeholder="List current prescriptions..."></textarea>
+
+      <h2>🩺 Doctor's Recommendation</h2>
+      <textarea name="doctor-notes" id="doctor-notes" rows="4" placeholder="Doctor's observations and advice..."></textarea>
+
+      <button type="submit" class="submit-button">💾 Save Record</button>
+    </form>
+  </section>
+
+  <section class="download-section">
+    <h2 class="section-title">⬇️ Download Previous Records</h2>
+    <form class="download-form">
+      <label for="record">Select a patient</label>
+      <select name="record" id="record" required>
+        <option value="">-- Select a patient --</option>
+        <option value="record-12345.pdf">Aatif (ID: 12345)</option>
+        <option value="record-56789.pdf">Aayush (ID: 56789)</option>
+        <option value="record-98765.pdf">Raj (ID: 98765)</option>
+      </select>
+      <button type="submit" class="download-btn">Download</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 HMS CONNECT. All rights reserved.</p>
+      <p>Developed by: Satyam Singh</p>
+      <p>Contact: support@hmsconnect.com | +91 1236547890</p>
+      <p>Follow us on:
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+        <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

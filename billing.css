@@ -1,0 +1,43 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e2e8f0;
+    border-radius: 12px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(145deg, #94a3b8, #64748b);
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(145deg, #475569, #334155);
+}
+
+::selection {
+    background-color: #3b82f6;
+    color: white;
+}
+
+body, button, input, textarea, select {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
